@@ -31,15 +31,15 @@
 
 		case $EmpAttendance in
 
-		0) WorkingHrs=0	# Employee is Absent
+		0) WorkingHrs=0
 		;;
 
-		1)	WorkingHrs=4 	# Employee is Present for Half Day
+		1)	WorkingHrs=4
 			((WorkingDays++))
 			((EmpWorkingHrs+=WorkingHrs))
 		;;
 
-		2)	WorkingHrs=8	# Employee Work For Full Day
+		2)	WorkingHrs=8
 			((WorkingDay++))
 			((EmpWorkingHrs+=WorkingHrs))
 		;;
